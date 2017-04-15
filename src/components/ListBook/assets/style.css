@@ -1,0 +1,36 @@
+.th-list-isbn {
+	width: 100px;
+	background-color: lightseagreen;
+	color: white;
+}
+.th-list-npq {
+	width: 225px;
+	background-color: lightseagreen;
+	color: white;
+}
+.th-list-totle {
+	width: 150px;
+	background-color: lightseagreen;
+	color: white;
+}
+
+.th-list-action {
+	width: 150px;
+	background-color: lightseagreen;
+	color: white;
+}
+.div-list {
+	margin-top: 30px;
+}
+
+.p-list {
+	text-align: left;
+	text-decoration: underline;
+	font-weight: bold;
+	color: green;
+}
+
+.Search {
+	margin: 15px 1px;
+	text-align: left;
+}

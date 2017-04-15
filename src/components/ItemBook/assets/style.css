@@ -1,0 +1,11 @@
+.td-item {
+	border-style: inset;
+	border-color: lightseagreen;
+}
+
+.editStyle {
+	display: none;
+}
+.viewStyle {
+	display: inline;
+}

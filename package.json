@@ -1,0 +1,39 @@
+{
+  "name": "redux-member-management",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://SmallBetter.github.io/redux-bookcart-app/",
+  "dependencies": {
+    "react": "15.4.2",
+    "react-addons-css-transition-group": "15.4.2",
+    "react-addons-transition-group": "15.4.2",
+    "react-dom": "15.4.2",
+    "react-redux": "^5.0.3",
+    "redux": "^3.6.0",
+    "redux-thunk": "^2.2.0"
+  },
+  "devDependencies": {
+    "@kadira/react-storybook-addon-info": "^3.4.0",
+    "@kadira/storybook": "^2.35.3",
+    "@kadira/storybook-addons": "^1.6.1",
+    "enzyme": "^2.8.0",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.10.3",
+    "gh-pages": "^0.12.0",
+    "react-addons-test-utils": "15.4.2",
+    "react-scripts": "^0.9.5"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "deploy": "npm run build && gh-pages -d build",
+    "test": "react-scripts test --env=jsdom",
+    "coverage": "npm test -- --coverage --collectCoverageFrom=src/**/*js --collectCoverageFrom=!{src/{index.js,utils/**},**/{__stories__,__tests__,_assets_}/**} && start coverage/lcov-report/index.html",
+    "lint": "eslint src",
+    "storybook": "start http://localhost:9009 && start-storybook -p 9009 -s public",
+    "build-storybook": "build-storybook -s public"
+  }
+}

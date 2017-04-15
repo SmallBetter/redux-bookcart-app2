@@ -1,0 +1,16 @@
+.th-input {
+	padding-top: 20px;
+	padding-left: 20px;
+	width: 200px;
+	text-align: left;
+}
+.td-input {
+	padding-top: 20px;
+	width: 200px;
+}
+
+.btn-input {
+	width: 100px;
+	margin-left: 20px;
+	margin-top: 15px;
+}

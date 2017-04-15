@@ -1,0 +1,34 @@
+extends: airbnb
+parser: "babel-eslint"
+env:
+  browser: true
+  node: true
+  es6: true
+  jest: true
+plugins:
+  - react
+  - jsx-a11y
+  - import
+rules:
+  linebreak-style: ["error", "unix"]
+  eol-last: "off"
+  semi: ["error", "never"]
+  class-methods-use-this: "off"
+  no-confusing-arrow: "off"
+  no-plusplus: "off"
+  arrow-parens: ["error", "as-needed"]
+  max-len: ["error", 150]
+  newline-per-chained-call: ["error", { "ignoreChainWithDepth": 5 }]
+  func-names: ["error", "never"]
+  comma-dangle: ["error", {
+    "arrays": "never",
+    "objects": "never",
+    "imports": "never",
+    "exports": "never",
+    "functions": "ignore",
+  }]
+  jsx-a11y/no-static-element-interactions: "off"
+  import/prefer-default-export: "off"
+  import/no-extraneous-dependencies: ["error", {"devDependencies": ["**/__tests__/*.js", "**/__stories__/*.js"]}]
+  react/jsx-filename-extension: ["warn", { "extensions": [".js", ".jsx"] }]
+  react/require-extension: "off"
