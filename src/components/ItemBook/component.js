@@ -13,15 +13,9 @@ class ItemBook extends Component {
 
   eventSave = () => {
     const { name, price, quantity } = { ...this.state }
-    if (name.length > 0 &&
-      price > 0 &&
-      quantity > 0) { this.props.bookSave({ ...this.state }) }
-    this.setState({
-      id: this.props.id,
-      name: this.props.name,
-      price: this.props.price,
-      quantity: this.props.quantity
-    })
+    if (name.length > 0 && price > 0 && quantity > 0) {
+      this.props.bookSave({ ...this.state })
+    }
   }
 
   changeName = event => {
